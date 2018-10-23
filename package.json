@@ -1,23 +1,34 @@
 {
-  "name": "mrobinson",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "personal website",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "dev": "webpack -d --watch",
-    "start": "node ./server/index.js",
-    "build": "webpack -p",
-    "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
-  "author": "Michael Robinson (me)",
+  "keywords": [],
+  "author": "Michael Robinson",
   "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "react-hot-loader": "^4.3.11",
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "wepack": "0.0.1"
+  },
   "dependencies": {
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "webpack": "^4.22.0"
+    "react-dom": "^16.5.2"
   }
 }
