@@ -10,12 +10,6 @@
   "keywords": [],
   "author": "Michael Robinson",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -28,7 +22,8 @@
     "wepack": "0.0.1"
   },
   "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1"
   }
 }
